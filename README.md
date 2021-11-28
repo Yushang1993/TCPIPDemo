@@ -1,7 +1,7 @@
 # TCPIPDemo
 Notes about TCPIP
-## 概述
-### 分层
+## 1. 概述
+### 1.1 分层
 >网络协议通常分不同层次进行开发，每一层分别负责不同的通信功能。一个协议族，比如TCP/IP，是一组不同层次上的多个协议的组合，TCP/IP协议通常被认为是一个四层协议系统：
 
 ![image](https://user-images.githubusercontent.com/34849140/143688228-e51c3229-4be1-48d1-a784-c5119e653217.png)
@@ -28,3 +28,10 @@ Notes about TCPIP
 **ARP和RARP**地址解析协议、逆地址解析协议是某些网络接口使用的特殊协议，用来转换IP层和网络接口层使用的地址，4、5章节会进行分析和介绍。
 
 ![image](https://user-images.githubusercontent.com/34849140/143726853-89e2aba4-9545-4ffa-9121-43aec82270ae.png)
+
+### 1.2 互联网的地址
+互联网上的每个接口必须有一个唯一的Internet地址，也称为IP地址，长32bit。IP地址具有以下5中结构：
+
+![addressstruct](https://user-images.githubusercontent.com/34849140/143731601-5319808d-7a54-49ab-9098-021ac6c4d1f6.png)
+
+负责为接入互联网的网络分配IP地址得管理机构称之为InternetNetworkIC互联网络信息中心，它只负责分配网络号，主机号的分配由系统管理员来负责。
