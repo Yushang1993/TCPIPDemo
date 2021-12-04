@@ -324,9 +324,24 @@ C:\Users\zhou>arp -a
   Internet 地址         物理地址              类型
   224.0.0.22            01-00-5e-00-00-16     静态
   224.0.0.252           01-00-5e-00-00-fc     静态
-```
 
+C:\Users\zhou>telnet 192.168.29.132
+```
+tcpdump抓包：
+
+![image](https://user-images.githubusercontent.com/34849140/144705820-26ba5156-02ed-4d9a-be3a-ad3fd4136a84.png)
+
+>疑问：
+让人困惑的是ARP为什么寻找who has 192.168.29.2?虚拟机的地址是29.1，后面DNS报文中才是29.1，这个疑问暂时格式，可能和DNS相关。
 
 #### 4.4.2 对不存在主机的ARP请求
 
-指定一个并不存在的Internet地址—根据网络号和子网号所对应的网络确实存在，但是并不存在所指定的主机号。
+指定一个并不存在的Internet地址—根据网络号和子网号所对应的网络确实存在，但是并不存在所指定的主机号。主机号从36到62的主机并不存在（主机号为63是广播地址）。这里，我们用主机号36来举例（这次是Telnet的一个地址，而不是主机名）。
+
+![image](https://user-images.githubusercontent.com/34849140/144706401-fc0acdcd-d9b5-4b77-b023-abd3bb712cbe.png)
+
+![image](https://user-images.githubusercontent.com/34849140/144706424-4a27ccf5-262c-4bfd-8cea-7f8027de3f24.png)
+
+
+
+
