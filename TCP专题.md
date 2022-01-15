@@ -401,3 +401,6 @@ tcp   0      0      *.23             *.*                LISTEN
 ![image](https://user-images.githubusercontent.com/34849140/149169932-092958ca-77eb-4598-a042-37af44ebbaf0.png)
 
 ### 3.3 Nagle算法
+### 3.4 窗口大小通知
+
+## 4. TCP的成块数据流-20
