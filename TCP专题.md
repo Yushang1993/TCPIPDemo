@@ -645,3 +645,10 @@ TCP超时与重传中最重要的部分就是对一个给定连接的往返时�
 
 拥塞避免算法和慢启动算法需要对每个连接维持两个变量：一个拥塞窗口cwnd和一个慢启动门限ssthresh。这样得到的算法的工作过程如下：
 
+![image](https://user-images.githubusercontent.com/34849140/149972026-e65c02ba-a2c0-48c2-b719-5206f8b00e75.png)
+
+图21-8是慢启动和拥塞避免的一个可视化描述。我们以段为单位来显示cwnd和ssthresh，但它们实际上都是以字节为单位进行维护的。
+
+![image](https://user-images.githubusercontent.com/34849140/149972452-40fffe8c-e046-4999-ae19-0c4629823eeb.png)
+
+
